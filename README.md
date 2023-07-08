@@ -1,1 +1,1 @@
-# rsschool-cv
+https://Gilfanova198.github.io/rsschool-cv/cv
