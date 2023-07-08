@@ -49,7 +49,7 @@ print(convert_to_python_case(txt))
 
 # Courses:
 
-- [Stepik "Python Generation": a course for beginners]()
+- [Stepik "Python Generation": a course for beginners](https://raw.githubusercontent.com/Gilfanova1987/rsschool-cv/gh-pages/stepik-certificate-58852-e235a5c_page-0001.jpg)
 - RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
 - Web design Courses
 
