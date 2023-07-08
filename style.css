@@ -1,23 +1,28 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .section {
+    width: 100%;
+    }
+}
+
 @font-face {
-    font-family: Montserrat-Regular;
+    font-family: "Montserrat-Regular";
     src: url("assets/fonts/Montserrat-Regular.ttf");
     font-weight: 400;
-    }
+}
 @font-face {
-    font-family: 'Montserrat-Bold';
+    font-family: "Montserrat-Bold";
     src: url("assets/fonts/Montserrat-Bold.ttf");
     font-weight: 700;
-    }
-body {
-    font-family: Montserrat;
-    border: 1px solid red;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
+
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -32,18 +37,18 @@ body {
     padding: 0 20px;
     line-height: 50px;
     text-decoration: none;
-    color: black;
+    color: rgb(16, 45, 206);
     font-size: 16px;
-    transition: .3s;
-}
-.section-item a {
-    color: #829985;
-    text-decoration: none;  
+    transition: 0.3s;
+    text-decoration: none;
+    color: #000000;
     transition: color 0.5s;
 }
-.section-item a:hover {
-    color: #4d2323;
+
+.nav-link:hover {
+    color: #5d7260;
 }
+
 .main-container {
     display: flex;
     flex-wrap: wrap;
@@ -51,15 +56,57 @@ body {
 .section {
     width: 50%;
 }
-@media (max-width: 768px) {
-    .section {
-    width: 100%;
-    }
-}
-html {
-    scroll-behavior: smooth; 
+
+.section-title {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #4e524e;
 }
 
-* {
-    box-sizing: border-box;
+.section-list {
+    list-style: none;
+}
+.section-link {
+    padding: 0 20px;
+    line-height: 50px;
+    text-decoration: none;
+    color: rgb(16, 45, 206);
+    font-size: 16px;
+    transition: 0.3s;
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.5s;
+}
+.section-link:hover {
+    color: #5d7260;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+}
+
+.section-item {
+    position: relative;
+    padding-left: 30px;
+}
+.section-item::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    width: 10px;
+    height: 10px; 
+    border: 2px solid #5c5c5c;
+    border-radius: 50%;
 }
