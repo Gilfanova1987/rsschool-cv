@@ -74,7 +74,7 @@ body{
 }
 
 .title{
-    color: var(--white);
+    color: var(--black);
     text-transform: uppercase;
     font-weight: 600;
     line-height: 1.4em;
@@ -114,6 +114,27 @@ body{
     background-color: var(--white);
     padding: 40px;
 }
+
+.caption{
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.skill{
+    padding-top: 15px;
+}
+.python{
+    background-color:rgb(120, 120, 120);
+}
+.code-python{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    padding-top: 27px;
+    color: var(--white)
+}
+
 :root {
   --white: #f9f9f9;
   --black: #3638368f;
@@ -130,4 +151,5 @@ body{
   src: url("assets/fonts/Montserrat-Bold.ttf");
   font-weight: 700;
 }
+
 
