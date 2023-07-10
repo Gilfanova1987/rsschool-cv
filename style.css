@@ -1,27 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
 :root {
     --white: #ffffff;
     --gray: #d3d3d38f;
     --roza: #c9c1c5;
     --grey-grey: #e0e0e0;
     --black: #444444;
-  }
-  
-  @font-face {
-    font-family: "Montserrat-Regular";
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*align-items: center;*/
+    min-height: 100vh;
+    margin: 0 ;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--black);
+    background-color: var(--gray);
+}
+.section-title{
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--black);
+}
+
+@font-face {
+    font-family: "Montserrat";
     src: url("assets/fonts/Montserrat-Regular.ttf");
     font-weight: 400;
-  }
-  @font-face {
-    font-family: "Montserrat-Bold";
+}
+@font-face {
+    font-family: "Montserrat";
     src: url("assets/fonts/Montserrat-Bold.ttf");
     font-weight: 700;
-  }
-  
-
-*{
+}
+.container{
+    max-width: 1440px;
     margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
 }
 .header{
     margin-top: 15px;
@@ -32,7 +57,7 @@
 }
 .nav-list {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     list-style: none;
 }
@@ -40,152 +65,25 @@
     padding: 0 20px;
     line-height: 50px;
     text-decoration: none;
-    color: rgb(16, 35, 206);
+    color: var(--black);
     font-size: 16px;
     font-weight: 500;
-    transition: 0.3s;
-    text-decoration: none;
-    color: var(--black);
-    transition: color 0.5s;
 }
 
 .nav-link:hover {
+    transition: 0.3s;
+    transition: color 0.5s;
     color: #241d81;
 }
-
-body{
+.main-container{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 100vh;
-    font-family: Montserrat-Regular, sans-serif;
-    background-color: var(--gray);
+    flex-wrap: wrap;
 }
-.container{
-    position: relative;
-    width: 100%;
-    max-width: 1000px;
-    min-height: 1000px;
-    margin: 15px;
-    background-color: var(--roza);
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+.section{
+    width: 50%;
 }
-
-.container .left-side
-{
-    position: relative;
-    background-color: var(--roza);
-    padding: 40px;
+@media (max-width: 768px) {
+    .section {
+        width: 100%;
+    }
 }
-.profileText{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 20px;
-    border-bottom: 3px solid var(--grey-grey);
-}
-.profileText .imgBx{
-    position: relative;
-    overflow: hidden;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 3px solid var(--grey-grey);
-    
-    
-}
-.profileText .imgBx img
-{
-    position: obsolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.profileText h1{
-    color: var(--black);
-    font-size: 30px;
-    margin-top: 20px;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 600;
-    line-height: 1.4em;
-    letter-spacing: 1px;
-}
-.profileText h1 span{
-    font-size: 18px;
-    font-weight: 300;
-}
-.contactinfo{
-    padding-top: 30px;
-}
-
-.title{
-    color: var(--black);
-    text-transform: uppercase;
-    font-weight: 600;
-    line-height: 1.4em;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-}
-.contactinfo ul{
-    position: relative;
-}
-.contactinfo ul li{
-    list-style: none;
-    margin: 10px 0;
-    cursor: pointer;
-}
-.contactinfo ul li .icon{
-    display: inline-block;
-    width: 25px;
-    font-size: 18px;
-    color: var(--grey-grey)
-}
-.contactinfo ul li .span{
-    color: var(--black);
-    font-weight: 300;
-}
-.contactinfo.courses li{
-    margin-bottom: 15px;
-}
-
-.contactinfo.courses h3{
-    color: #ffffff;
-    font-weight: 500;
-}
-
-.container .right-side
-{
-    position: relative;
-    background-color: var(--white);
-    padding: 40px;
-}
-
-.caption{
-    list-style: none;
-    margin: 10px 0;
-    cursor: pointer;
-}
-.skill{
-    padding-top: 15px;
-}
-.python{
-    background-color: var(--roza);
-}
-.code-python{
-    position: relative;
-    display: flex;
-    align-items: center;    
-    padding-top: 27px;
-    color: var(--black)
-}
-
-
-

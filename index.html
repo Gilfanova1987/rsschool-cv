@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <title>cv</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/favicon/favicon.ico">
 </head>
 <body>
 <!--header-->
     <header class="header">
-        <div class="container-header">
+        <div class="container">
             <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
@@ -28,134 +28,38 @@
 <!--header-->
 
     <main class="main">
-    <div class="container">
-        <div class="left-side">
-            <div class="profileText">
-                <div class="imgBx">
-                    <img src="assets/img/121450956.jpg" alt class="logo">
-                </div>
-                <h1>Gilfanova Iuliia<br><span>Web developer</span></h1>
-            </div>
-            <div class="contactinfo">
-                <h2 class="title">Contact info</h2>
-                <ul>
-                    <li>
-                        <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-                        <span class="text">Phone: +5492235207327</span>
-                    </li>
-                    <li>
-                        <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-                        <span class="text">E-mail: rahma87@mail.ru</span>
-                    </li>
-                    <li>
-                        <span class="icon"><i class="fa fa-github" aria-hidden="true"></i></span>
-                        <span class="text">GitHub: Gilfanova1987</span>
-                    </li>
-                    <li>
-                        <span class="icon"><i class="fa fa-telegram" aria-hidden="true"></i></span>
-                        <span class="text">Telegram: iuliia_design</span>
-                    </li>
-                </ul>
+        <div class="container main-container">
+
+            <section class="section" id="profile">
+                <h1 class="section-title">Gilfanova Iuliia<br><span>Web developer</span></h1>
+            </section>
+
+            <section class="section" id="contact">
+                <h2 class="section-title">Contact info</h2>
+            </section>
+
+            <section class="section" id="language">
+                <h2 class="section-title">languages</h2>
+            </section>
+            
+            <section class="section" id="summary">
+                <h2 class="section-title">About Myself</h2>
+            </section>
+
+            <section class="section" id="skills">
+                <h2 class="section-title">Skills and Proficiency</h2>
+            </section>
+
+            <section class="section" id="code">
+                <h2 class="section-title">Code</h2>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
             
         </div>
+    </footer>
 
-            <div class="contactinfo languages">
-                <h2 class="title">languages</h2>
-                <ul>
-                    <li>
-                        <p class="text"><b>Russian</b>-native speaker</p>
-                    </li>
-                    <li>
-                        <p class="text"><b>Spanish</b>-beginner</p>
-                    </li>
-                    <li>
-                        <p class="text"><b>Englis</b>-in process of studying</p>
-                    </li>
-                </ul>
-
-            </div>
-
-
-
-    
-        </div>
-    
-
-        <div class="right-side">
-            <div class="about">
-                <h2 class="title">About Myself</h2>
-                <p>I am a creative and motivated web designer with a passion for front-end development. I have a passion for creating aesthetically pleasing and intuitive user interfaces. I have experience with design tools and knowledge of web standards, and I also strive for an in-depth study of front-end development.</p>
-                <div class="contactinfo skill">
-                <ul>
-                    <li class="caption"><h4>My skills include:</h4></li>
-                    <li>Interface design: Knowledge of Adobe Photoshop, Figma tools. Creating attractive layouts and prototypes for websites.</li>
-                    <li>Web tools: In the process of learning the Git version control system.</li>
-                    <li>Web tools: In the process of learning the Git version control system.</li>
-                    <li>Understanding UX/UI: Ability to create user experience focused designs with a focus on simplicity and usability.</li><br>
-                    <p>I have a background in web design.</p><br>
-                    <p>I strive to constantly learn and improve my skills, as well as to participate in interesting projects where I can apply my knowledge and creativity to achieve results.</p>
-                </ul>
-                </div>
-            </div>
-            <div class="contactinfo skills">
-                <h2 class="title">Skills and Proficiency</h2>
-                <ul>
-                    <li>
-                        <p class="text">Web design</p>
-                    </li>
-                    <li>
-                        <p class="text">Basics Python</p>
-                    </li>
-                    <li>
-                        <p class="text">HTML5, CSS3 Basics</p>
-                    </li>
-                    <li>
-                        <p class="text">JavaScript Basics</p>
-                    </li>
-                    <li>
-                        <p class="text">Adobe Photoshop, Figma</p>
-                    </li>
-                </ul>
-        </div>
-        <div class="contactinfo code">
-            <h2 class="title">Code</h2>
-            <pre class="python"><code class="code-python">
-                def convert_to_python_case(text):
-                    for c in text:
-                        if c.isupper():
-                            text=text.replace(c,'_' + c.lower())
-                    text = text[1:]
-                    return text
-                
-                txt = input()
-                print(convert_to_python_case(txt))
-                </code>
-            </pre>
-        </div>
-    
-
-    </div>
-        
-    </div>
-    </main>
-<footer class="footer">
-    <div class="container-header">
-        <nav class="nav">
-            <ul class="nav-list">
-                <li>
-                <span class="icon"><i class="fa fa-github" aria-hidden="true"></i></span>
-                <span class="text">GitHub: Gilfanova1987</span>
-                </li>
-                <li>
-                    <p>2023</p>
-                </li>
-                <li>
-                    <span class="icon"><img src="https://rs.school/images/rs_school_js.svg"/></span>
-                    <span class="text">rsschool</span>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</footer>
 </body>
 </html>
