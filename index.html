@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <title>cv</title>
+    <link rel="stylesheet" href="/rsschool-cv/css/necolas.github.io_normalize.css_8.0.1_normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/favicon/favicon.ico">
@@ -36,29 +37,83 @@
 
             <section class="section" id="contact">
                 <h2 class="section-title">Contact info</h2>
+                    <ul class="section-list">
+                    <li class="section-item">+5492235207327</li>
+                    <li class="section-item">E-mail: <a class="section-link" href="mailto:rahma87@mail.ru">rahma87@mail.ru</a></li>
+                    <li class="section-item">GitHub: <a class="section-link" href="https://github.com/Gilfanova1987">Gilfanova1987</a></li>
+                    <li class="section-item">Telegram: <a class="section-link" href="https://t.me/iuliia_design">iuliia_design</a></li>
+                </ul>
             </section>
 
             <section class="section" id="language">
                 <h2 class="section-title">languages</h2>
+                <ul class="section-list">
+                    <li class="section-item">Russian - native speaker</li>
+                    <li class="section-item">Spanish - beginner</li>
+                    <li class="section-item">English - in process of studying</li>
+                </ul>
             </section>
             
+            <section class="section" id="Courses">
+                <h2 class="section-title">Courses</h2>
+                <ul class="section-list">
+                    <li class="section-item">Stepik "Python Generation": a course for beginners</li>
+                    <li class="section-item">RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</li>
+                    <li class="section-item">Web design Courses</li>
+                </ul>
+            </section>
+
             <section class="section" id="summary">
                 <h2 class="section-title">About Myself</h2>
+                <p>I am a creative and motivated web designer with a passion for front-end development. I have a passion for creating aesthetically pleasing and intuitive user interfaces. I have experience with design tools and knowledge of web standards, and I also strive for an in-depth study of front-end development.</p>
+                <h4>My skills include:</h4>
+                <ul class="section-list">
+                    <li class="section-item">Interface design: Knowledge of Adobe Photoshop, Figma tools. Creating attractive layouts and prototypes for websites</li>
+                    <li class="section-item"> Web tools: In the process of learning the Git version control system</li>
+                    <li class="section-item">Understanding UX/UI: Ability to create user experience focused designs with a focus on simplicity and usability</li>
+                </ul>
+                <p>I have a background in web design</p>
+                <p>I strive to constantly learn and improve my skills, as well as to participate in interesting projects where I can apply my knowledge and creativity to achieve results</p>
             </section>
 
             <section class="section" id="skills">
                 <h2 class="section-title">Skills and Proficiency</h2>
+                <ul class="section-list">
+                    <li class="section-item">Web design</li>
+                    <li class="section-item">Basics Python</li>
+                    <li class="section-item">Basics HTML5, CSS3, JavaScript</li>
+                    <li class="section-item">Adobe Photoshop, figma</li>
+                </ul>
             </section>
 
-            <section class="section" id="code">
+            <section class="section" id="code example">
                 <h2 class="section-title">Code</h2>
+                <pre><code>
+                    def convert_to_python_case(text):
+                        for c in text:
+                            if c.isupper():
+                                text=text.replace(c,'_' + c.lower())
+                        text = text[1:]
+                        return text
+                    
+                    txt = input()
+                    print(convert_to_python_case(txt))
+                </code></pre>
             </section>
+
         </div>
     </main>
+
     <footer class="footer">
-        <div class="container">
-            
-        </div>
+            <div class="container">
+                <nav class="nav-footer">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="https://github.com/Gilfanova1987" class="nav-link">Gilfanova1987</a></li>
+                        <li class="nav-item">2023</li>
+                        <li class="nav-item"><a href="https://rs.school/js/"><img src="/rsschool-cv/assets/svg/rs_school_js.svg"></a></li>
+                    </ul>
+                </nav>
+            </div>
     </footer>
 
 </body>
